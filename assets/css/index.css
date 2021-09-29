@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+    color: unset;
+}
+
+
+/*header styles*/
+
+nav {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 10.6vh;
+    color: white;
+}
+
+.navbar {
+    position: absolute;
+    border: 1px white solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+}
+
+.logo_and_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    width: 125px;
+}
+
+.logo_and_name>h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo_and_name>.fa-spotify {
+    font-size: 2.3rem;
+}
+
+.navbar_items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    width: 480px
+}
+
+.navbar_items>p {
+    font-weight: 900;
+    font-size: 0.9rem;
+}
