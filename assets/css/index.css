@@ -10,7 +10,7 @@
 }
 
 
-/*header styles*/
+/*header and navbar styles*/
 
 nav {
     position: relative;
@@ -60,4 +60,92 @@ nav {
 .navbar_items>p {
     font-weight: 900;
     font-size: 0.9rem;
+}
+
+
+/*section first styles*/
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+#first {
+    background-image: url('../images/firstwp.png');
+    height: 72vh;
+}
+
+.first_container,
+.first_container_written,
+.first_container_image,
+.spotifyimage {
+    border: 1px solid black;
+}
+
+.first_container {
+    height: 80%;
+    width: 72%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.first_container_written {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 60%;
+    height: 100%;
+}
+
+.first_container_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.spotifyimage {
+    height: 90%;
+    width: 80%;
+}
+
+.spotifyimage>img {
+    height: 100%;
+    width: 100%;
+}
+
+.first_container_written>p {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin: 30px 0px 35px 0px;
+}
+
+.first_container_written>h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.first_container_written>h4 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 20px 0px 30px 0px;
+}
+
+.first_container_written>button {
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    background-color: black;
+    border: 1px white solid;
+    border-radius: 25px;
+    width: 270px;
+    height: 45px;
+    color: whitesmoke;
 }
