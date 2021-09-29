@@ -5,7 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
     color: unset;
 }
 
@@ -20,7 +20,7 @@ nav {
     align-items: center;
     background-color: black;
     height: 10.6vh;
-    color: white;
+    color: whitesmoke;
 }
 
 .navbar {
@@ -54,12 +54,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     border: 1px solid white;
-    width: 480px
+    width: 500px
 }
 
-.navbar_items>p {
-    font-weight: 900;
-    font-size: 0.9rem;
+.navbar_items>a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
 }
 
 
@@ -81,7 +82,9 @@ section {
 .first_container,
 .first_container_written,
 .first_container_image,
-.spotifyimage {
+.spotifyimage,
+.second_container,
+.second_container_written {
     border: 1px solid black;
 }
 
@@ -139,6 +142,52 @@ section {
 }
 
 .first_container_written>button {
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    background-color: black;
+    border: 1px white solid;
+    border-radius: 25px;
+    width: 270px;
+    height: 45px;
+    color: whitesmoke;
+}
+
+#second {
+    background-image: url('../images/secondwp.jpg');
+    height: 75vh;
+}
+
+.second_container {
+    position: absolute;
+    left: 225px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 45%;
+    height: 80%;
+}
+
+.second_container>p {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin: 30px 0px 35px 0px;
+}
+
+.second_container>h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.second_container>h4 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 20px 0px 30px 0px;
+}
+
+.second_container>button {
     font-weight: 600;
     font-size: 0.8rem;
     letter-spacing: 3px;
