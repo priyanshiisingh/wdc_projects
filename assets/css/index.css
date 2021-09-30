@@ -198,3 +198,71 @@ section {
     height: 45px;
     color: whitesmoke;
 }
+
+
+/*footer styles*/
+
+footer {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 70vh;
+}
+
+.footer_container {
+    position: absolute;
+    border: 1px white solid;
+    height: 70%;
+    width: 72%;
+    margin-bottom: 30px;
+}
+
+.end_container {
+    position: absolute;
+    bottom: 40px;
+    border: 1px red solid;
+    height: 10%;
+    width: 72%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.end_list {
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    height: 100%;
+    width: 50%;
+}
+
+.end_list>ul {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.end_list>ul>li>a {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.country {
+    text-decoration: nones;
+    border: 1px blue solid;
+    height: 100%;
+    width: 10%;
+    justify-content: space-around;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: grey;
+}
