@@ -216,7 +216,7 @@ footer {
     position: absolute;
     border: 1px white solid;
     height: 70%;
-    width: 72%;
+    width: 75%;
     margin-bottom: 30px;
 }
 
@@ -225,7 +225,7 @@ footer {
     bottom: 40px;
     border: 1px red solid;
     height: 10%;
-    width: 72%;
+    width: 75%;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -255,7 +255,7 @@ footer {
 }
 
 .country {
-    text-decoration: nones;
+    text-decoration: none;
     border: 1px blue solid;
     height: 100%;
     width: 10%;
@@ -267,14 +267,62 @@ footer {
     color: grey;
 }
 
+.footer_container>.logo_and_name {
+    position: absolute;
+    top: 5%;
+}
+
 .footer_table {
-    height: 80%;
-    width: 40%;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    height: 70%;
+    width: 45%;
     border: 1px solid white;
 }
 
-#ftable {
+.ftable {
     height: 100%;
     width: 100%;
     border: 1px white solid;
+}
+
+th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+td {
+    font-size: 0.9rem;
+}
+
+.social_container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px white solid;
+    height: 15%;
+    width: 15%;
+    top: 10%;
+    right: 0;
+}
+
+.social_container>button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(54, 54, 54);
+    border: none;
+}
+
+.fa-instagram {
+    font-size: 1.5rem;
+}
+
+.fa-twitter,
+.fa-facebook-f {
+    font-size: 1.3rem;
 }
