@@ -25,7 +25,6 @@ nav {
 
 .navbar {
     position: absolute;
-    border: 1px white solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +35,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid white;
     width: 125px;
 }
 
@@ -53,7 +51,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid white;
     width: 500px
 }
 
@@ -77,15 +74,6 @@ section {
 #first {
     background-image: url('../images/firstwp.png');
     height: 72vh;
-}
-
-.first_container,
-.first_container_written,
-.first_container_image,
-.spotifyimage,
-.second_container,
-.second_container_written {
-    border: 1px solid black;
 }
 
 .first_container {
@@ -146,7 +134,6 @@ section {
     font-size: 0.8rem;
     letter-spacing: 3px;
     background-color: black;
-    border: 1px white solid;
     border-radius: 25px;
     width: 270px;
     height: 45px;
@@ -192,7 +179,6 @@ section {
     font-size: 0.8rem;
     letter-spacing: 3px;
     background-color: black;
-    border: 1px white solid;
     border-radius: 25px;
     width: 270px;
     height: 45px;
@@ -214,7 +200,6 @@ footer {
 
 .footer_container {
     position: absolute;
-    border: 1px white solid;
     height: 70%;
     width: 75%;
     margin-bottom: 30px;
@@ -223,7 +208,6 @@ footer {
 .end_container {
     position: absolute;
     bottom: 40px;
-    border: 1px red solid;
     height: 10%;
     width: 75%;
     justify-content: space-between;
@@ -235,7 +219,6 @@ footer {
 .end_list {
     display: flex;
     justify-content: center;
-    border: 1px solid white;
     height: 100%;
     width: 50%;
 }
@@ -246,7 +229,6 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 1px solid white;
 }
 
 .end_list>ul>li>a {
@@ -256,7 +238,6 @@ footer {
 
 .country {
     text-decoration: none;
-    border: 1px blue solid;
     height: 100%;
     width: 10%;
     justify-content: space-around;
@@ -278,13 +259,11 @@ footer {
     top: 5%;
     height: 70%;
     width: 45%;
-    border: 1px solid white;
 }
 
 .ftable {
     height: 100%;
     width: 100%;
-    border: 1px white solid;
 }
 
 th {
@@ -303,7 +282,6 @@ td {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px white solid;
     height: 15%;
     width: 15%;
     top: 10%;
