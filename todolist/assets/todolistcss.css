@@ -13,7 +13,7 @@
 /*header styles*/
 
 header {
-    background-image: url('../images/day.jpeg');
+    background-image: url('./images/day.jpeg');
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -283,6 +283,7 @@ body.dark .item {
     background: -webkit-linear-gradient(to right, #CF1B6F 25%, #CF691B 59%);
     background: -moz-linear-gradient(to right, #CF1B6F 25%, #CF691B 59%);
     background: linear-gradient(to right, #CF1B6F 25%, #CF691B 59%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 50%;
