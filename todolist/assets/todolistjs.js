@@ -3,8 +3,11 @@ const body = document.querySelector('body')
 const input = document.querySelector('input')
 const inputbutton = document.querySelector('.addtask_btn')
 const parent = document.querySelector('.list_items')
-const gparent = document.querySelector('.forscroll')
 const deletebutton = document.querySelector('.fa-times')
+const listitem = document.querySelector('ul')
+const clearbutton = document.querySelector('.clr_btn')
+
+var arr = []
 
 //dark light mode toggling
 const dlbutton_callbackfuntion = (() => {
@@ -13,10 +16,9 @@ const dlbutton_callbackfuntion = (() => {
 dlbutton.addEventListener('click', dlbutton_callbackfuntion)
 
 //input into list
-var arr = []
-iteminput = input.value
-const inputbutton_callback = (iteminput) => {
-    if (arr.includes(iteminput) === true) {
+const inputbutton_callback = () => {
+    iteminput = { task: input.value, status: 'pending' }
+    if (arr.includes(iteminput)) {
         alert("already exsits")
     } else {
         const template = `
@@ -24,42 +26,45 @@ const inputbutton_callback = (iteminput) => {
                     <i class="fa fa-check-circle"></i>
                 </div>
                 <div class="item">
-                    <p>${input.value}<p>   
+                    <p>${iteminput.task}<p>   
                 </div>
                 <div class="list_tools">
                     <i class="fa fa-times"></i>
                     <i class="fas fa-bars"></i>
                 </div>
                 `
-        const newitem = document.createElement('div')
+        const newitem = document.createElement('li')
         newitem.setAttribute('class', 'items')
         newitem.innerHTML = template
-        console.log(newitem)
-        newi = parent.appendChild(newitem)
-        gparent.appendChild(newi)
-        arr.push(`${input.value}`)
+        newi = listitem.appendChild(newitem)
+        parent.appendChild(newi)
+        arr.push(iteminput)
     }
 }
 
 // arr.forEach(inputbutton_callback)
-inputbutton.addEventListener('click', (e) => {
-    inputbutton_callback(input.value)
+inputbutton.addEventListener('click', () => {
+    inputbutton_callback()
     console.log(arr)
 })
 
-console.log(arr)
+// clear button 
+clearbutton.addEventListener('click', () => {
+    parent.innerHTML = null
+    arr = []
+    console.log(arr)
+})
 
-// deletebutton.addEventListener('click', (e) => {
-//     arr.splice(e, 1)
-//     console.log(e.target.remove)
-// })
+// const deletebutton_callback = (event) => {
+//     arr.forEach((ele, index) => {
+//         if (ele == event.target) {
+//             listitem[index].remove();
+//             arr.splice(index, 1);
+//         }
+//     })
+// }
 
-//delete item
-// deletebutton.addEventListener('click', (e) => {
-//     delete_callbackfunc(e)
+// deletebutton.addEventListener('click', (event) => {
+//     deletebutton_callback(event)
 //     console.log(arr)
-// })
-
-// element.addEventListener('click', (e) => {
-//     console.log(e.target.remove)
 // })

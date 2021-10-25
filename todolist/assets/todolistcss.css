@@ -78,6 +78,8 @@ body.dark .main_insert {
     min-height: 10px;
     width: 455px;
     top: -200px;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .main_header {
@@ -160,6 +162,7 @@ body.dark .main_insert {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(245, 244, 244);
+    border-top-left-radius: 10px;
 }
 
 body.dark .main_list {
@@ -212,7 +215,10 @@ body.dark .taskbar {
 }
 
 .list_items {
+    max-height: 350px;
+    overflow-y: scroll;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(245, 244, 244);
@@ -225,7 +231,7 @@ body.dark .list_items {
 }
 
 .items {
-    margin: 5px 0px 5px 10px;
+    margin: 5px 0px 5px 5px;
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -242,7 +248,8 @@ body.dark .items {
     transition: 0.2s ease-in;
 }
 
-.forscroll {
+
+/* .forscroll {
     max-height: 350px;
     overflow-y: scroll;
     background-color: rgb(245, 244, 244);
@@ -251,7 +258,7 @@ body.dark .items {
 
 body.dark .forscroll {
     background-color: #181717;
-}
+} */
 
 .checkbutton {
     flex-grow: 0;
