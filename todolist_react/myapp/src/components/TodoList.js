@@ -14,21 +14,37 @@ function TodoList() {
     // console.log(item, ...listitems);
   };
 
+  const updateitem = (itemid, newval) => {
+    if (!newval.text) {
+      return;
+    }
+    setItems((prev) => prev.map((i) => (i.id === itemid ? newval : i)));
+  };
+  const removeItem = (id) => {
+    const removeArr = [...listitems].filter((item) => item.id != id);
+    setItems(removeArr);
+  };
+
   const completeTodo = (id) => {
-    let updateitem = listitems.map((item) => {
+    let updatei = listitems.map((item) => {
       if (item.id === id) {
         item.isComplete = !item.isComplete;
       }
       return item;
     });
-    setItems(updateitem);
+    setItems(updatei);
   };
 
   return (
     <div>
       <h1>Todo List</h1>
       <TodoForm onSubmit={additem} />
-      <TodoDom listitems={listitems} completeTodo={completeTodo} />
+      <TodoDom
+        listitems={listitems}
+        completeTodo={completeTodo}
+        removeItem={removeItem}
+        updateItem={updateitem}
+      />
     </div>
   );
 }
