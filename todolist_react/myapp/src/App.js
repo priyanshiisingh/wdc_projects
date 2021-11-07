@@ -1,15 +1,13 @@
-// import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import Footer from "./layouts/Footer";
+import Header from "./layouts/Header";
 
 const App = () => {
   return (
     <div className="App">
-      {/* <TodoForm /> */}
+      <Header />
       <TodoList />
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 };
